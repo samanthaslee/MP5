@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5481BD98CF1DB102A1813DB6 /* Pods_MP5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523C25216276E8749E849D6A /* Pods_MP5.framework */; };
 		EF6F64852236C9B600B5200B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6F64842236C9B600B5200B /* AppDelegate.swift */; };
 		EF6F64872236C9B600B5200B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6F64862236C9B600B5200B /* ViewController.swift */; };
 		EF6F648A2236C9B600B5200B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6F64882236C9B600B5200B /* Main.storyboard */; };
 		EF6F648C2236C9B800B5200B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6F648B2236C9B800B5200B /* Assets.xcassets */; };
 		EF6F648F2236C9B800B5200B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6F648D2236C9B800B5200B /* LaunchScreen.storyboard */; };
+		EF6F64972236CB9000B5200B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF6F64962236CB9000B5200B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C5404E2AE04308CD1D63A0E /* Pods-MP5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MP5.debug.xcconfig"; path = "Target Support Files/Pods-MP5/Pods-MP5.debug.xcconfig"; sourceTree = "<group>"; };
+		523C25216276E8749E849D6A /* Pods_MP5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MP5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B0C66ABED6EE7D869B3D31 /* Pods-MP5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MP5.release.xcconfig"; path = "Target Support Files/Pods-MP5/Pods-MP5.release.xcconfig"; sourceTree = "<group>"; };
 		EF6F64812236C9B600B5200B /* MP5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MP5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6F64842236C9B600B5200B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF6F64862236C9B600B5200B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,8 @@
 		EF6F648B2236C9B800B5200B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6F648E2236C9B800B5200B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF6F64902236C9B800B5200B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF6F64962236CB9000B5200B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EFC3FD022236E6E500F3F0A8 /* MP5.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MP5.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5481BD98CF1DB102A1813DB6 /* Pods_MP5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DC5FC76AB793FC493A47FB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				523C25216276E8749E849D6A /* Pods_MP5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD5E394B333847F3513CDBE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C5404E2AE04308CD1D63A0E /* Pods-MP5.debug.xcconfig */,
+				91B0C66ABED6EE7D869B3D31 /* Pods-MP5.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EF6F64782236C9B500B5200B = {
 			isa = PBXGroup;
 			children = (
 				EF6F64832236C9B600B5200B /* MP5 */,
 				EF6F64822236C9B600B5200B /* Products */,
+				AD5E394B333847F3513CDBE5 /* Pods */,
+				0DC5FC76AB793FC493A47FB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +81,8 @@
 		EF6F64832236C9B600B5200B /* MP5 */ = {
 			isa = PBXGroup;
 			children = (
+				EFC3FD022236E6E500F3F0A8 /* MP5.entitlements */,
+				EF6F64962236CB9000B5200B /* GoogleService-Info.plist */,
 				EF6F64842236C9B600B5200B /* AppDelegate.swift */,
 				EF6F64862236C9B600B5200B /* ViewController.swift */,
 				EF6F64882236C9B600B5200B /* Main.storyboard */,
@@ -71,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF6F64932236C9B800B5200B /* Build configuration list for PBXNativeTarget "MP5" */;
 			buildPhases = (
+				ED4BC0EDE4C412CCAB933A60 /* [CP] Check Pods Manifest.lock */,
 				EF6F647D2236C9B600B5200B /* Sources */,
 				EF6F647E2236C9B600B5200B /* Frameworks */,
 				EF6F647F2236C9B600B5200B /* Resources */,
+				54D455D0DAB78EDF4A94E62F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +127,11 @@
 				TargetAttributes = {
 					EF6F64802236C9B600B5200B = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,10 +161,60 @@
 				EF6F648F2236C9B800B5200B /* LaunchScreen.storyboard in Resources */,
 				EF6F648C2236C9B800B5200B /* Assets.xcassets in Resources */,
 				EF6F648A2236C9B600B5200B /* Main.storyboard in Resources */,
+				EF6F64972236CB9000B5200B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54D455D0DAB78EDF4A94E62F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MP5/Pods-MP5-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MP5/Pods-MP5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED4BC0EDE4C412CCAB933A60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MP5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF6F647D2236C9B600B5200B /* Sources */ = {
@@ -280,15 +366,18 @@
 		};
 		EF6F64942236C9B800B5200B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C5404E2AE04308CD1D63A0E /* Pods-MP5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MP5/MP5.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2JVY29H4R;
 				INFOPLIST_FILE = MP5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MP5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdb.iostraining.sp19.mp5.BFFLTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,15 +386,18 @@
 		};
 		EF6F64952236C9B800B5200B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B0C66ABED6EE7D869B3D31 /* Pods-MP5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MP5/MP5.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2JVY29H4R;
 				INFOPLIST_FILE = MP5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MP5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdb.iostraining.sp19.mp5.BFFLTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
