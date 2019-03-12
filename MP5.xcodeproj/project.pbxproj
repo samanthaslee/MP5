@@ -13,7 +13,7 @@
 		EF6F648A2236C9B600B5200B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6F64882236C9B600B5200B /* Main.storyboard */; };
 		EF6F648C2236C9B800B5200B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6F648B2236C9B800B5200B /* Assets.xcassets */; };
 		EF6F648F2236C9B800B5200B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6F648D2236C9B800B5200B /* LaunchScreen.storyboard */; };
-		EF6F64972236CB9000B5200B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF6F64962236CB9000B5200B /* GoogleService-Info.plist */; };
+		EFC3FD062237340B00F3F0A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFC3FD052237340B00F3F0A8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		EF6F648B2236C9B800B5200B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6F648E2236C9B800B5200B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF6F64902236C9B800B5200B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF6F64962236CB9000B5200B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFC3FD022236E6E500F3F0A8 /* MP5.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MP5.entitlements; sourceTree = "<group>"; };
+		EFC3FD052237340B00F3F0A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				EFC3FD022236E6E500F3F0A8 /* MP5.entitlements */,
-				EF6F64962236CB9000B5200B /* GoogleService-Info.plist */,
+				EFC3FD052237340B00F3F0A8 /* GoogleService-Info.plist */,
 				EF6F64842236C9B600B5200B /* AppDelegate.swift */,
 				EF6F64862236C9B600B5200B /* ViewController.swift */,
 				EF6F64882236C9B600B5200B /* Main.storyboard */,
@@ -128,6 +128,12 @@
 					EF6F64802236C9B600B5200B = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
@@ -159,9 +165,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF6F648F2236C9B800B5200B /* LaunchScreen.storyboard in Resources */,
+				EFC3FD062237340B00F3F0A8 /* GoogleService-Info.plist in Resources */,
 				EF6F648C2236C9B800B5200B /* Assets.xcassets in Resources */,
 				EF6F648A2236C9B600B5200B /* Main.storyboard in Resources */,
-				EF6F64972236CB9000B5200B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
